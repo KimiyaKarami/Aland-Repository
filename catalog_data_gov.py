@@ -1,3 +1,4 @@
+#kimiya karami
 import requests
 from bs4 import BeautifulSoup
 
@@ -35,7 +36,6 @@ total = f"<h1>exercise4</h1>\n{header}\n"
 for d in datas :
     total += f"{d}\n"
 
-#Puting total string into table tag
 total = f"<table>{total} </table>"
 
 with open('catalog_data_gov_table.html', 'w') as file :
